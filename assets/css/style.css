@@ -1,0 +1,508 @@
+@font-face 
+{ 
+    font-family: 'Raleway';
+    src: url('../polices/Raleway-Regular.ttf') format('truetype');
+       		font-weight:normal;
+       		font-style: normal;
+
+}
+
+
+body
+{
+	font-family: Raleway;
+}
+
+#bloc_page
+{
+    width: 900px;
+    margin: auto;
+}
+
+/*Logo + menu*/
+
+.logomenu
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.logomenu img
+{
+	width: 90px;
+	height: 35%;
+}
+nav a
+
+{
+	text-decoration: none;
+	color:black;
+}
+.inscription
+{
+	text-decoration: none;
+	color:#0065FC;
+}
+
+nav a:hover
+{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+
+nav ul
+{
+	display: flex; /* Pour que la liste soit horizontale et non plus verticale*/
+	list-style-type: none;
+}
+nav li
+{
+	margin-right: 10px; /* Espace entre les differents choix du menu*/
+}
+
+.infosMenu
+{
+	margin-top: 20px;
+	margin-bottom: 30px;
+	font-size: 0.7em;
+	display: flex;
+}
+
+.infosMenu i
+{
+	color:#0065FC;
+}
+
+.infosMenu i
+{
+	margin-right: 5px;
+}
+
+footer
+{
+margin-top: 10px;
+display: flex;
+justify-content: space-around;
+background-color: #F2F2F2;
+}
+/* Aligner les h2 avec les listes*/
+
+.A_propos h3
+{
+	padding-left: 15%;
+}
+
+.Nos_hebergements h3
+{
+	padding-left: 20%;
+}
+.Assistance h3
+{
+	padding-left: 25%;
+}
+
+footer ul
+{
+	list-style-type: none;
+}
+
+footer .A_propos
+{
+	margin-right: 15%;
+}
+footer .Nos_hebergements
+{
+	margin-right: 15%;
+}
+
+/* Blocs filtres*/
+
+#filtres
+{
+	display: flex;
+	align-items: baseline;
+}
+
+#filtres ul
+{
+	display: flex;
+	list-style-type: none;
+}
+
+.logofiltres
+{
+	display: flex;
+}
+
+#filtres li
+{
+	margin-right: 15px; /*espace entre intitulé logo et bordure à droite*/
+}
+
+#filtres p
+{
+	margin-right: 8.5px; /*espace entre intitulé logo et bordure à droite*/
+}
+
+
+.logo:hover
+{
+	color:#0065FC;
+	font-size: 0.8em;
+}
+
+.logo
+{
+	padding-right: 10px;
+	display: flex;
+	border: 2px solid #F2F2F2;
+	border-radius: 20px;
+}
+
+.logo i
+{
+	color: #0065FC;
+	font-size: 13px;
+	background-color:#DEEBFF;
+	border-radius:15px;
+	margin-right: 10px;
+	padding: 5px; /*logo centré dans l'icone*/
+}
+
+#section1
+{
+	font-size: 0.9em;
+	display: flex;
+	justify-content: space-between;
+	height: 580px;
+}
+
+/*Hebergements*/
+
+#Hebergements
+{
+	display: flex;
+	flex-direction: column;
+	flex-grow:1;
+	background-color: #F2F2F2;
+	margin-right: 15px;
+	border-radius: 20px;
+}
+
+
+#Hebergements figure
+{
+	border-radius: 20px;
+	height: 185px;
+	width: 200px;
+	background-color: white;
+}
+
+#Hebergements figcaption
+{
+	padding-left: 10px;
+	padding-bottom: 0;
+}
+
+#Hebergements img
+{
+	width: 95%;
+	padding: 5px 0px 0px 5px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	height:110px;
+}
+figcaption h3
+{
+	margin-top: 0;
+	margin-bottom: 2px;
+}
+
+figcaption p
+{
+	margin-top: 0;
+	margin-bottom:1px;
+}
+
+/*notation1= Toutes les étoiles remplies*/
+/*notation3= 1 étoile au moins*/
+/*notation4= 2 étoiles au moins*/
+
+.notation1,.notation3,.notation4
+{ 
+	color: #0065FC;
+}
+
+.notation3 i:last-child,.notation4 i:last-child, .notation4 i:nth-last-of-type(2)
+{ 
+	color: #F2F2F2;
+}
+
+#Hebergements p:last-child
+{
+	font-size: 1em;
+	font-weight:bold;
+	padding-left: 2%;
+	margin-top: 40px;
+}
+
+#Hebergements h2
+{
+	padding-left: 2%;
+}
+
+.bloc1H
+{
+	display: flex;
+	justify-content: center;
+}
+
+.bloc2H
+{
+	display: flex;
+	margin-right: 20px;
+}
+
+.img1H
+{
+	margin-right:0;
+}
+.img2H
+{
+	margin-right:30px;
+	margin-left: 30px;
+}
+
+.img3H
+{
+	margin-left:0;
+}
+
+/*Les plus populaires*/
+
+.LPP
+{ 
+	height: 580px;
+	border-radius: 20px;
+	width: 500px;
+	background-color: #F2F2F2;
+}
+
+.logoLPP
+{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+
+.blocs
+{
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.bloc1A
+{
+	display: flex;
+	justify-content: flex-start;
+	background-color: white;
+	border-radius: 20px;
+	width:85%; 
+}
+
+
+.bloc1A img, .bloc2A img
+{
+	
+	margin-top: 4.5px;
+	margin-left: 5px;
+	margin-right: 20px;
+	margin-bottom: 5px;
+	border-radius: 20px;
+	width: 150px;
+	height: 120px;
+}
+
+.bloc1A i,.bloc2A i
+{
+	color: #0065FC;
+}
+
+.legende
+{
+	position: relative;
+	padding-right: 10px;
+}
+
+.notation, .notation2
+{
+	position: absolute;
+	bottom: 5px;
+}
+
+.notation2 i:last-child
+{
+	color: #F2F2F2;
+}
+
+/*Activités Marseille*/
+
+#ActivitésMarseille
+{
+	height: 450px;
+	margin-top: 30px;
+}
+
+#ActivitésMarseille h2
+{
+	margin-left: 2%;
+}
+
+.bloc-A
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.bloc-A figure
+{
+	border: 1px solid #F2F2F2;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #F2F2F2;
+	font-weight: bold;
+}
+
+
+.bloc-A figcaption
+{
+
+	padding-left: 10px;
+}
+
+/*Classes pour les images seules*/
+
+.fig1, .fig4
+{
+	margin-right: 5px;
+}
+
+.enligne2, .fig4
+{
+	margin-left: 0px;
+}
+
+.fig1, .fig4
+{
+	width: 280px;
+	height: 300px;
+}
+
+.fig1 img, .fig4 img
+{
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+	max-width:100%;
+	height: 85%;
+}
+/*Images en colonnes*/
+
+/*Premier bloc*/
+
+.fig2
+{
+	height:160px;
+	border-radius: 20px;
+}
+.fig3
+{
+	height:120px;
+	border-radius: 20px;
+	position: absolute;
+	bottom: 1px;
+}
+
+.fig2 img
+{
+	height:80%;
+}
+
+.fig3 img
+{
+	height: 75%;
+}
+
+.fig2 img, .fig3 img
+{
+	width: 100%;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+/*Deuxieme bloc*/
+
+.fig5
+{
+	/*width: auto;*/
+	height:120px;
+	border-radius: 20px;
+}
+
+.fig6
+{
+	/*width: auto;*/
+	height:160px;
+	border-radius: 20px;
+	position: absolute;
+	bottom:1px;
+}
+
+.fig5 img
+{
+	height:75%;
+}
+
+.fig6 img
+{
+	height: 75%;
+}
+
+.fig5 img, .fig6 img
+{
+	width: 100%;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+
+/*Config des images en lignes*/
+
+.enligne1, .enligne2
+{
+	width: 365px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/*Petits réglages*/
+
+h1
+{
+	font-size: 1.5em;
+}
+
+h2 
+{
+	font-size: 1.4em;
+}
+
+h3
+{
+	font-size:1em;
+}
+
