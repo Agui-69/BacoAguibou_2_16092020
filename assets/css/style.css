@@ -21,44 +21,68 @@ body
 
 /*Logo + menu*/
 
-.logomenu
+.main
 {
 	display: flex;
 	justify-content: space-between;
+	/*flex-wrap: wrap; IMPORTANT POUR LE RESPONSIVE!!!!!*/
 }
 
 .logomenu img
 {
 	width: 90px;
-	height: 35%;
+	height: 50px;
 }
-nav a
+
+.HA
+{
+	width: 20%; /*100% en responsive*/
+	display: flex;
+	justify-content: space-between;
+	margin-left: 40%;
+	padding-left: 200px;
+}
+
+.HA a
 
 {
 	text-decoration: none;
 	color:black;
 }
+
+/*.IM 
+{
+	/*width: 30%;
+}*/
+
 .inscription
 {
 	text-decoration: none;
 	color:#0065FC;
+	display: flex;
+	justify-content: flex-end;
+	
 }
 
-nav a:hover
+.insc
+{
+	margin-right: 20px;;
+	/*width: 30%;*/
+	order: 1; /*Annuler en responsive*/
+}
+
+.insc, .HA
+{
+	margin-top: 10px;
+}
+
+.insc a:hover, .HA a:hover
 {
     color: #0065FC;
 	border-top: 2px solid #0065FC;
 }
 
-nav ul
-{
-	display: flex; /* Pour que la liste soit horizontale et non plus verticale*/
-	list-style-type: none;
-}
-nav li
-{
-	margin-right: 10px; /* Espace entre les differents choix du menu*/
-}
+/*Fin logo + Menu*/
 
 .infosMenu
 {
