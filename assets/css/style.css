@@ -59,14 +59,14 @@ body
 {
 	text-decoration: none;
 	color:#0065FC;
-	display: flex;
-	justify-content: flex-end;
+	/*display: flex;
+	justify-content: flex-end;*/
 	
 }
 
 .insc
 {
-	margin-right: 20px;;
+	margin-right: 5px;
 	/*width: 30%;*/
 	order: 1; /*Annuler en responsive*/
 }
@@ -576,12 +576,56 @@ h3
 
 @media only screen and (max-width: 1140px) 
 {
+	.main
+	{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		
+	}
+	.IM 
+	{
+		width: 100%;
+	}
+	.insc
+	{
+		margin-right: 0;
+		padding-right: 5px;
+	}	
+	.HA
+	{
+		width: 60%;
+		margin-left:0;
+		padding-left: 5px;
+	}
+}
+
+
+/*@media only screen and (max-width: 1140px) 
+{
+	.main
+	{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding: 0 10px;
+	}
+	.IM 
+	{
+		width: 50%;
+	}
 	.insc
 	{
 		order: 1;
+		width: 50%;
+		margin-right: 0;
 	}	
 	.HA
 	{
 		order: 2;
+		width: 100%;
+		margin-left:0;
+		padding-left: 0;
+		
 	}
-}
+}*/
