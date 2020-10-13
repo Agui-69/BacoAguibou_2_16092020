@@ -59,14 +59,14 @@ body
 {
 	text-decoration: none;
 	color:#0065FC;
-	/*display: flex;
-	justify-content: flex-end;*/
+	display: flex;
+	justify-content: flex-end;
 	
 }
 
 .insc
 {
-	margin-right: 5px;
+	margin-right: 20px;;
 	/*width: 30%;*/
 	order: 1; /*Annuler en responsive*/
 }
@@ -617,15 +617,9 @@ h3
 	.insc
 	{
 		order: 1;
-		width: 50%;
-		margin-right: 0;
 	}	
 	.HA
 	{
 		order: 2;
-		width: 100%;
-		margin-left:0;
-		padding-left: 0;
-		
 	}
-}*/
+}
