@@ -574,3 +574,14 @@ h3
 	font-size:1em;
 }
 
+@media only screen and (max-width: 1140px) 
+{
+	.insc
+	{
+		order: 1;
+	}	
+	.HA
+	{
+		order: 2;
+	}
+}
