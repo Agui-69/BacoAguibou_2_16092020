@@ -25,7 +25,6 @@ nav
 {
 	display: flex;
 	justify-content: space-between;
-	/*flex-wrap: wrap; IMPORTANT POUR LE RESPONSIVE!!!!!*/
 }
 
 .logomenu img
@@ -237,6 +236,8 @@ footer .Nos_hebergements
 	padding: 5px; /*logo centré dans l'icone*/
 }
 
+/*Fin Bloc filtres*/
+
 #section1
 {
 	font-size: 0.9em;
@@ -266,6 +267,11 @@ footer .Nos_hebergements
 	background-color: white;
 }
 
+.cover 
+{
+	object-fit: cover;
+}
+
 #Hebergements figcaption
 {
 	padding-left: 10px;
@@ -293,8 +299,8 @@ figcaption p
 }
 
 /*notation1= Toutes les étoiles remplies*/
-/*notation3= 1 étoile au moins*/
-/*notation4= 2 étoiles au moins*/
+/*notation3= 1 étoile en moins*/
+/*notation4= 2 étoiles en moins*/
 
 .notation1,.notation3,.notation4
 { 
@@ -476,6 +482,7 @@ figcaption p
 	max-width:100%;
 	height: 85%;
 }
+
 /*Images en colonnes*/
 
 /*Premier bloc*/
@@ -574,7 +581,9 @@ h3
 	font-size:1em;
 }
 
-@media only screen and (max-width: 1140px) 
+/* Responsive*/
+
+@media only screen and (max-width: 1150px) 
 {
 	nav
 	{
@@ -598,6 +607,33 @@ h3
 		margin-left:0;
 		padding-left: 5px;
 	}
+
+	#section1
+	{
+		height: 1180px;
+		display: block;
+	}
+
+	#Hebergements
+	{
+		width: 100%;
+	}
+	.bloc1A {
+		justify-content: flex-start;
+		width: 45%;
+	}
+
+	
+	.LPP
+	{ 
+		height: 580px;
+		border-radius: 20px;
+		width: 100%;
+		background-color: #F2F2F2;
+		margin-top: 10px;
+	}
+
+
 }
 
 
