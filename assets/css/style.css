@@ -521,14 +521,12 @@ figcaption p
 
 .fig5
 {
-	/*width: auto;*/
 	height:120px;
 	border-radius: 20px;
 }
 
 .fig6
 {
-	/*width: auto;*/
 	height:160px;
 	border-radius: 20px;
 	position: absolute;
@@ -587,11 +585,9 @@ h3
 {
 	nav
 	{
-		display: flex;
-		justify-content: space-between;
 		flex-wrap: wrap;
-		
 	}
+
 	.IM 
 	{
 		width: 100%;
@@ -618,21 +614,56 @@ h3
 	{
 		width: 100%;
 	}
-	.bloc1A {
-		justify-content: flex-start;
+	.bloc1A 
+	{
 		width: 45%;
 	}
 
 	
 	.LPP
 	{ 
-		height: 580px;
-		border-radius: 20px;
 		width: 100%;
-		background-color: #F2F2F2;
 		margin-top: 10px;
 	}
 
+
+	#ActivitésMarseille
+	{
+		height: 1450px;
+		margin-top: 20px;
+	}
+
+	.bloc-A
+	{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.enligne1, .enligne2
+	{
+		position: static;
+	}
+	
+	.fig1, .fig4
+	{
+		width: 250px;
+		height: 200px;
+		margin-left: 0;
+		margin-right: 30px;
+	}
+	
+	 .fig2,.fig5
+	{
+		width: 250px;
+		height: 200px;
+		
+	}
+	.fig3,.fig6
+	{
+		height: 200px;
+		position: static;
+		width: 250px;
+	}
 
 }
 
