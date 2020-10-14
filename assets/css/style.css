@@ -21,7 +21,7 @@ body
 
 /*Logo + menu*/
 
-.main
+nav
 {
 	display: flex;
 	justify-content: space-between;
@@ -576,7 +576,7 @@ h3
 
 @media only screen and (max-width: 1140px) 
 {
-	.main
+	nav
 	{
 		display: flex;
 		justify-content: space-between;
@@ -603,7 +603,7 @@ h3
 
 /*@media only screen and (max-width: METTRE DIM MOBILE) 
 {
-	.main
+	nav
 	{
 		display: flex;
 		justify-content: space-between;
