@@ -586,6 +586,7 @@ h3
 	nav
 	{
 		flex-wrap: wrap;
+		border-bottom: 2px solid #F2F2F2 ;
 	}
 
 	.IM 
@@ -668,14 +669,16 @@ h3
 }
 
 
-/*@media only screen and (max-width: METTRE DIM MOBILE) 
+@media only screen and (max-width: 760px) 
 {
+
+	header
+	{
+		height: 470px;
+	}
 	nav
 	{
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		padding: 0 10px;
+		border-bottom: none;
 	}
 	.IM 
 	{
@@ -684,9 +687,53 @@ h3
 	.insc
 	{
 		order: 1;
-	}	
+	}
+	
+	#filtres
+	{
+		display: block;
+	}
+
+	#filtres ul
+	{
+		width: 100%;
+		flex-direction: column;
+		flex-wrap: wrap;
+		padding-inline-start: 0;
+		height:120px;
+	}
+	.eco, .rom
+	{
+		width: 150px;
+		margin-top: 10px;
+	}
+
+	.fam
+	{
+		width: 110px;
+		margin-top: 10px;
+		order: 1;
+	}
+
+	.dog
+	{ 
+		width: 200px;
+		margin-top: 10px;
+	}
+
 	.HA
 	{
+		width: 100%;
 		order: 2;
+		border-bottom: 2px solid #F2F2F2 ;
+		margin-bottom: 10px;
+		padding-left: 25px;
+		padding-right: 50px;
 	}
+	.HA a:hover
+	{
+		border-top:none;
+		border-bottom:2px solid #0065FC ;
+	}
+
 }
