@@ -608,7 +608,7 @@ h3
 
 	#section1
 	{
-		height: 2000px;
+		height: 60%;
 		display: block;
 	}
 
@@ -700,14 +700,14 @@ h3
 
 @media only screen and (max-width: 760px) 
 {
-	html 
+	/*html 
 	{
-		/*height: 4300px;*/
-	}
+		width: 420px;
+	}*/
 
 	header
 	{
-		height: 500px;
+		height: auto;
 	}
 	nav
 	{
@@ -769,14 +769,9 @@ h3
 		border-bottom:2px solid #0065FC ;
 	}
 
-	#section1
-	{
-		height: 2100px;
-	}
-
-	.LPP
+	.bloc1A
 	{ 
-		height: 700px;
+		width:350px;
 	}
 
 }
