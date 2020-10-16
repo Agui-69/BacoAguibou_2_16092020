@@ -10,12 +10,13 @@
 
 body
 {
+	
 	font-family: Raleway;
 }
 
 #bloc_page
 {
-    width: 900px;
+    width: 95%;
     margin: auto;
 }
 
@@ -581,7 +582,7 @@ h3
 
 /* Responsive*/
 
-@media only screen and (max-width: 1150px) 
+@media only screen and (max-width: 1150px) /*tablette*/
 {
 	nav
 	{
@@ -607,14 +608,28 @@ h3
 
 	#section1
 	{
-		height: 1180px;
+		height: 2000px;
 		display: block;
 	}
 
 	#Hebergements
 	{
+		height: 1370px;
 		width: 100%;
 	}
+
+	.bloc1H
+	{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.bloc1H figure
+	{
+		margin: 0;
+		margin-bottom: 20px;
+	}
+
 	.bloc1A 
 	{
 		width: 45%;
@@ -665,16 +680,34 @@ h3
 		position: static;
 		width: 250px;
 	}
+	
+	footer .A_propos, footer .Nos_hebergements
+	{
+		margin-right: 0;
+	}
+
+	.A_propos h3, .Nos_hebergements h3
+	{
+		padding-left: 0;
+	}
+
+	.A_propos ul, .Nos_hebergements ul
+	{
+		padding-inline-start: 0px;
+	}
 
 }
 
-
 @media only screen and (max-width: 760px) 
 {
+	html 
+	{
+		/*height: 4300px;*/
+	}
 
 	header
 	{
-		height: 470px;
+		height: 500px;
 	}
 	nav
 	{
@@ -736,4 +769,15 @@ h3
 		border-bottom:2px solid #0065FC ;
 	}
 
+	#section1
+	{
+		height: 2100px;
+	}
+
+	.LPP
+	{ 
+		height: 700px;
+	}
+
 }
+
