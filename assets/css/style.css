@@ -112,14 +112,16 @@ nav
 	margin-bottom: 5px;
   }
 
-  .icone-rech {
+  .icone-rech 
+  {
 	background-color: #F2F2F2;
 	padding: 10px 12px;
 	border-radius: 10px 0 0 10px;
 	text-align: center;
   }
 
-  .saisie-rech {
+  .saisie-rech 
+  {
 	border-right: none;
 	border-left: none;
 	border-top: #F2F2F2 1px solid;
@@ -129,12 +131,14 @@ nav
 	font-weight: bold;
   }
 
-  .saisie-rech::placeholder {
+  .saisie-rech::placeholder 
+  {
 	font-size: 1.2em;
 	color: black;
   }
 
-  .bouton-rech {
+  .bouton-rech 
+  {
 	background-color: #0065FC;
 	color: white;
 	font-weight: bold;
@@ -144,6 +148,8 @@ nav
 	font-size: 1em;
 	cursor: pointer;
   }
+
+  /*Fin bloc formulaire*/
 
 footer
 {
@@ -698,7 +704,9 @@ h3
 
 }
 
-@media only screen and (max-width: 760px) /*mobile*/
+
+
+@media only screen and (max-width: 760px) 
 {
 	header
 	{
@@ -731,7 +739,7 @@ h3
 		flex-direction: column;
 		flex-wrap: wrap;
 		padding-inline-start: 0;
-		height:120px;
+		height:100px;
 	}
 	.eco, .rom
 	{
@@ -785,9 +793,46 @@ h3
 
 }
 
+@media only screen and (max-width:420px) /*breakpoint filtres*/
+{
+	#filtres ul
+	{
+		height:120px;
+	}
+}
+
+ @media screen and (min-width:371px) /*breakpoint affichage logo rech
+									 dans le formulaire*/
+{
+
+	.bouton-rech i
+	{
+	  display: none;
+	}
+	.saisie-rech
+	{
+		padding: 0 5px;
+		width: 160px;
+	}
+  }
+
+ 
 
 @media only screen and (max-width: 370px) 
 {	
+	.saisie-rech 
+	{
+		padding: 0 5px;
+		font-size: 0.6em;
+		width: 115px;
+	}
+
+	.text-bouton-rech
+
+	{
+		display: none;
+	}
+
 	h1 
 	{
 		font-size: 1.1em;
@@ -877,6 +922,11 @@ h3
 	}
 
 }
+
+
+
+  
+  
 
 @media only screen and (max-width: 300px)
 {
