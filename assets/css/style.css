@@ -335,7 +335,7 @@ figcaption p
 .bloc1H
 {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 }
 
 .bloc2H
@@ -619,25 +619,6 @@ h3
 		height: 60%;
 		display: block;
 	}
-
-	#Hebergements
-	{
-		height: 1370px;
-		width: 100%;
-	}
-
-	.bloc1H
-	{
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.bloc1H figure
-	{
-		margin: 0;
-		margin-bottom: 20px;
-	}
-
 	.bloc1A 
 	{
 		width: 325px;
@@ -761,7 +742,6 @@ h3
 		width: 200px;
 		margin-top: 10px;
 	}
-
 	.HA
 	{
 		width: 100%;
@@ -791,6 +771,42 @@ h3
 	.Assistance ul 
 	{
 		padding-inline-start: 0;
+	}
+
+}
+
+@media only screen and (max-width:745px)
+{
+	#Hebergements figure
+	{
+		width: 170px;
+	}
+}
+
+
+@media only screen and (max-width:650px)
+{
+	#Hebergements
+	{
+		height: 1370px;
+		width: 100%;
+	}
+
+	#Hebergements figure
+	{
+		width: 210px;
+	}
+
+	.bloc1H
+	{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.bloc1H figure
+	{
+		margin: 0;
+		margin-bottom: 20px;
 	}
 
 }
