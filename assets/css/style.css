@@ -478,7 +478,7 @@ figcaption p
 
 .fig1, .fig4
 {
-	width: 280px;
+	width: 290px;
 	height: 300px;
 }
 
@@ -619,57 +619,24 @@ h3
 		height: 60%;
 		display: block;
 	}
+
+
 	.bloc1A 
 	{
 		width: 325px;
 	}
 
-	
+	.bloc-A
+		{
+			font-size:0.9em;
+		}
+
 	.LPP
 	{ 
 		width: 100%;
 		margin-top: 10px;
 	}
 
-
-	#ActivitésMarseille
-	{
-		height: 1450px;
-		margin-top: 20px;
-	}
-
-	.bloc-A
-	{
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.enligne1, .enligne2
-	{
-		position: static;
-	}
-	
-	.fig1, .fig4
-	{
-		width: 250px;
-		height: 200px;
-		margin-left: 0;
-		margin-right: 30px;
-	}
-	
-	 .fig2,.fig5
-	{
-		width: 250px;
-		height: 200px;
-		
-	}
-	.fig3,.fig6
-	{
-		height: 200px;
-		position: static;
-		width: 250px;
-	}
-	
 	footer .A_propos, footer .Nos_hebergements
 	{
 		margin-right: 0;
@@ -687,7 +654,25 @@ h3
 
 }
 
+@media only screen and (max-width: 1070px) /*breakpoint pour 
+										   activites marseille*/
+{
+	#ActivitésMarseille
+		{
+			height: 730px;
+		}
 
+		.bloc-A
+		{
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+		
+		.enligne2, .fig4 
+		{
+		margin-left: revert;
+		}
+}
 
 @media only screen and (max-width: 760px) 
 {
@@ -742,6 +727,45 @@ h3
 		width: 200px;
 		margin-top: 10px;
 	}
+
+	#ActivitésMarseille
+	{
+		height: 1450px;
+		margin-top: 20px;
+	}
+	
+	.bloc-A
+	{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.enligne1, .enligne2
+	{
+		position: static;
+	}
+	
+	.fig1, .fig4
+	{
+		width: 250px;
+		height: 200px;
+		margin-left: 0;
+		margin-right: 30px;
+	}
+	
+	 .fig2,.fig5
+	{
+		width: 250px;
+		height: 200px;
+		
+	}
+	.fig3,.fig6
+	{
+		height: 200px;
+		position: static;
+		width: 250px;
+	}
+	
 	.HA
 	{
 		width: 100%;
