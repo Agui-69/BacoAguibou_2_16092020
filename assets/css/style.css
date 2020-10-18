@@ -502,6 +502,7 @@ figcaption p
 .fig3
 {
 	height:120px;
+	width: -moz-available; /*Compatibilité firefox*/
 	border-radius: 20px;
 	position: absolute;
 	bottom: 1px;
@@ -535,6 +536,7 @@ figcaption p
 .fig6
 {
 	height:160px;
+	width: -moz-available; /*Compatibilité firefox*/
 	border-radius: 20px;
 	position: absolute;
 	bottom:1px;
