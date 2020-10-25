@@ -674,10 +674,11 @@ h3
 			justify-content: space-around;
 		}
 		
-		.enligne2, .fig4 
+		.fig4 
 		{
-		margin: revert;
+		margin-left: 40px;
 		}
+
 }
 
 @media only screen and (max-width: 760px) 
