@@ -78,22 +78,23 @@ nav
 	margin-bottom: 30px;
 	font-size: 0.7em;
 	display: flex;
+	align-items: center;
 }
 
 .infosmenu i
 {
-	color:#0065FC;
-}
-
-.infosmenu i
-{
-	margin-right: 5px;
+	color: #0065FC;
+    margin-right: 5px;
+    border: solid 2px #F2F2F2;
+    padding: 5px;
+	border-radius: 200%;
+	font-size: 0.8em;
 }
 
 /*Bloc formulaire*/
 .form-rechercher
  {
-	display: inline-flex;
+	display: flex;
 	max-width: 100%;
 	overflow: auto; /* Pour que le dépassement de saisie  soit géré
 	automatiquement*/
@@ -143,7 +144,7 @@ footer
 {
 margin-top: 10px;
 display: flex;
-justify-content: space-around;
+justify-content: flex-start;
 background-color: #F2F2F2;
 }
 /* Aligner les h3 avec les listes*/
@@ -169,7 +170,8 @@ footer ul
 
 footer .a_propos
 {
-	margin-right: 15%;
+	margin-left: 3%;
+    margin-right: 7%;
 }
 footer .nos_hebergements
 {
@@ -209,7 +211,7 @@ footer .nos_hebergements
 .logo:hover
 {
 	color:#0065FC;
-	font-size: 0.8em;
+	border-color:#0065FC ;
 	cursor: pointer;
 }
 
@@ -390,9 +392,14 @@ figcaption p
 	margin-left: 5px;
 	margin-right: 20px;
 	margin-bottom: 5px;
-	border-radius: 20px;
+	border-radius: 20px 0 0 20px;
 	width: 150px;
 	height: 120px;
+}
+
+.bloc1A a
+{
+	width: 100%;
 }
 
 .bloc1A i,.bloc2A i
@@ -621,7 +628,13 @@ h3
 	#section1
 	{
 		height: 60%;
-		display: block;
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.hebergements
+	{
+		margin-right: inherit;
 	}
 
 
@@ -639,11 +652,6 @@ h3
 	{ 
 		width: 100%;
 		margin-top: 10px;
-	}
-
-	footer .a_propos, footer .nos_hebergements
-	{
-		margin-right: 0;
 	}
 
 	.a_propos h3, .nos_hebergements h3
@@ -735,6 +743,17 @@ h3
 		margin-top: 10px;
 	}
 
+	.hebergements
+	{
+		order: 1;
+		margin-top: 10px;
+	}
+
+	.lpp
+	{
+		margin-top: inherit;
+	}
+
 	#activitésmarseille
 	{
 		height: 1450px;
@@ -795,6 +814,11 @@ h3
 		padding-left: 5%;
 	}
 
+	footer .a_propos
+	{
+		margin-left: 0px;
+	}
+
 	.assistance h3 {
 		padding-left: 0;
 	}
@@ -825,7 +849,7 @@ h3
 
 	.hebergements figure
 	{
-		width: 210px;
+		width: 230px;
 	}
 
 	.bloc1H
@@ -869,6 +893,11 @@ h3
 
 @media only screen and (max-width: 370px) 
 {	
+	.form-rechercher
+	{
+		justify-content: center;
+	}
+
 	.saisie-rech 
 	{
 		padding: 0 5px;
