@@ -476,7 +476,7 @@ figcaption p
 	border-top-left-radius:20px;
 	border-top-right-radius:20px;
 	max-width:100%;
-	height: 85%;
+	height: 90%;
 }
 
 /*Images en colonnes*/
@@ -538,7 +538,7 @@ figcaption p
 
 .fig6 img
 {
-	height: 75%;
+	height:80%;
 }
 
 .fig5 img, .fig6 img
