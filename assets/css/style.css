@@ -850,7 +850,7 @@ h3
 {
 	.hebergements
 	{
-		height: 1370px;
+		height: 1360px;
 		width: 100%;
 	}
 
@@ -985,6 +985,16 @@ h3
 		padding: 5px 5px 5px 0;
 	}
 
+	.bloc1H figure 
+	{
+		margin: auto;
+		margin-bottom: 20px;
+	}
+
+	.hebergements figure {
+		width: 90%;
+	}
+
 	#activitésmarseille
 	 {
 		height: 1150px;
@@ -993,21 +1003,27 @@ h3
 
 	.fig1, .fig4 
 	{
-		width: 190px;
+		width: 100%;
 		height: 150px;
 		margin-right: 0px;
 	}
 
+	.fig1 img, .fig4 img 
+	{
+		width:100%;
+		height:84%;
+	}
+
 	.fig2, .fig3,.fig5, .fig6
 	{
-		width: 190px;
+		width: 100%;
 		height: 150px;
-		margin-left: 55px;
+		margin-left: 0;
 	}
 
 	.enligne1, .enligne2
 	{
-		width: 300px;
+		width: 100%;
 	}
 
 	.bloc-A figcaption
