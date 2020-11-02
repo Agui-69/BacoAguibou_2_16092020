@@ -30,7 +30,7 @@ nav
 
 .h-a
 {
-	width: 20%;
+	width: 22%;
 	display: flex;
 	justify-content: space-between;
 	margin-left: 40%;
@@ -57,11 +57,6 @@ nav
 {
 	margin-right: 20px;
 	order: 1;
-}
-
-.insc, .h-a
-{
-	margin-top: 10px;
 }
 
 .insc a:hover, .h-a a:hover
@@ -599,6 +594,18 @@ h3
 		}
 }
 
+@media only screen and (min-width: 1151px)
+{
+	.logomenu img
+	{
+		margin-top: 10px;
+	}
+
+	.insc a, .h-a a
+	{
+		padding: 30px 15px 0 15px;
+	}
+}
 
 
 @media only screen and (max-width: 1150px) /*tablette*/
@@ -926,6 +933,19 @@ h3
 		font-size: 1.2em;
 	}
 
+	.logofiltres
+	{
+		font-size: 0.9em;
+	}
+
+	.fam
+	{
+		width: 95px;
+	}
+	.dog
+	{
+		width: 180px;
+	}
 
 	.infosmenu 
 	{
