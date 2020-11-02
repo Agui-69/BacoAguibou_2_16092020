@@ -991,8 +991,15 @@ h3
 		margin-bottom: 20px;
 	}
 
-	.hebergements figure {
+	.hebergements figure
+	{
 		width: 90%;
+	}
+
+	.hebergements img 
+	{
+		width: 98%;
+		padding: 3px;
 	}
 
 	#activitésmarseille
